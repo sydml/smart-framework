@@ -24,4 +24,9 @@ public final class StringUtil {
     public static boolean isNotEmpty(String string) {
         return !isEmpty(string);
     }
+
+
+    public static String[] splitString(String body, String regex) {
+        return body.split(regex);
+    }
 }
