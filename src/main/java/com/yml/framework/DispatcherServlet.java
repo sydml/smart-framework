@@ -28,7 +28,7 @@ import java.util.Map;
  * 日期： 2018-08-07
  * 时间： 22:25
  */
-public class DispathcherServlet extends HttpServlet {
+public class DispatcherServlet extends HttpServlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
         //初始化相关Helper类
