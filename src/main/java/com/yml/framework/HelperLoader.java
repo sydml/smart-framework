@@ -1,6 +1,7 @@
 package com.yml.framework;
 
 import com.yml.framework.annotation.Controller;
+import com.yml.framework.helper.AopHelper;
 import com.yml.framework.helper.BeanHelper;
 import com.yml.framework.helper.ClassHelper;
 import com.yml.framework.helper.IocHelper;
@@ -17,6 +18,7 @@ public final class HelperLoader {
         Class<?>[] classList = {
                 ClassHelper.class,
                 BeanHelper.class,
+                AopHelper.class,
                 IocHelper.class,
                 Controller.class
         };
