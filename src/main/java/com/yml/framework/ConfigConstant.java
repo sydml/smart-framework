@@ -22,4 +22,6 @@ public interface ConfigConstant {
 
     String APP_ASSET_PATH = "smart.framework.app.asset_path";
 
+    String APP_UPLOAD_LIMIT ="smart.framework.app.upload_limit";
+
 }
