@@ -22,10 +22,12 @@ public class CGLibDynamicProxy implements MethodInterceptor {
         return CGLIB_PROXY ==null? new CGLibDynamicProxy():CGLIB_PROXY;
     }
 
+    @SuppressWarnings("unchecked")
     public <T> T getProxy(Class<T> cls) {
         return (T) Enhancer.create(cls,this);
     }
 
+    @Override
     public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
         before();
         Object result = proxy.invokeSuper(obj, args);
